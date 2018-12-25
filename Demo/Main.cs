@@ -42,9 +42,6 @@ namespace Demo
 
             // Accent
             M.SetAccent(this, M.GetWindowsActiveColor());
-
-            Doc d = new Doc(this);
-            d.Show();
         }
 
         /// <summary>
@@ -77,13 +74,7 @@ namespace Demo
         /// </summary>
         private void OnResize(object sender, EventArgs e)
         {
-            cpuChart.Width = Width - 58;
-        }
-
-        private void OnKeyDown(object sender, KeyEventArgs e)
-        {
-            // if (e.KeyCode == Keys.Escape)
-                // drawer.Opened = !drawer.Opened;
+            cpuChart.Width = Width - 90;
         }
     }
 }
