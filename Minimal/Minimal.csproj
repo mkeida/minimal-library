@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71083A9B-C09E-430E-B2BE-1F5D132290C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Minimal</RootNamespace>
+    <AssemblyName>Minimal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Core\ComponentManager.cs" />
+    <Compile Include="Components\Core\IMComponent.cs" />
+    <Compile Include="Components\Core\MComponent.cs" />
+    <Compile Include="Components\Core\InputTypeChangedEventArgs.cs" />
+    <Compile Include="Components\Core\ThemeChangedEventArgs.cs" />
+    <Compile Include="Components\Designer\ButtonDesigner.cs" />
+    <Compile Include="Components\Designer\CheckBoxDesigner.cs" />
+    <Compile Include="Components\Designer\ColorBoxDesigner.cs" />
+    <Compile Include="Components\Designer\ComboBoxDesigner.cs" />
+    <Compile Include="Components\Designer\DrawerDesigner.cs" />
+    <Compile Include="Components\Designer\LabelDesigner.cs" />
+    <Compile Include="Components\Designer\ListBoxDesigner.cs" />
+    <Compile Include="Components\Designer\RadioButtonDesigner.cs" />
+    <Compile Include="Components\Designer\TextBoxDesigner.cs" />
+    <Compile Include="Components\Designer\TrackbarDesigner.cs" />
+    <Compile Include="Components\Items\ChartValue.cs" />
+    <Compile Include="Components\Items\MItem.cs" />
+    <Compile Include="Components\Items\SingleLineItem.cs" />
+    <Compile Include="Components\Items\TwoLineItem.cs" />
+    <Compile Include="Components\MBufferedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MBufferedPanel.Designer.cs">
+      <DependentUpon>MBufferedPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MButton.Designer.cs">
+      <DependentUpon>MButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MChart.Designer.cs">
+      <DependentUpon>MChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MCheckBox.Designer.cs">
+      <DependentUpon>MCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MColorBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MColorBox.Designer.cs">
+      <DependentUpon>MColorBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MComboBox.Designer.cs">
+      <DependentUpon>MComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Internal\ComboBoxHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Internal\ComboBoxHeader.Designer.cs">
+      <DependentUpon>ComboBoxHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Internal\ContextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Internal\ContextForm.Designer.cs">
+      <DependentUpon>ContextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MDrawer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MDrawer.Designer.cs">
+      <DependentUpon>MDrawer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MLabel.Designer.cs">
+      <DependentUpon>MLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MListBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\MListBox.Designer.cs">
+      <DependentUpon>MListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MRadioButton.Designer.cs">
+      <DependentUpon>MRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MScrollablePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\MScrollablePanel.Designer.cs">
+      <DependentUpon>MScrollablePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MStackPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MStackPanel.Designer.cs">
+      <DependentUpon>MStackPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\MTextBox.Designer.cs">
+      <DependentUpon>MTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MTrackbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\MTrackbar.Designer.cs">
+      <DependentUpon>MTrackbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MVerticalScrollbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\MVerticalScrollbar.Designer.cs">
+      <DependentUpon>MVerticalScrollbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="External\Hex.cs" />
+    <Compile Include="Internal\ColorExtensions.cs" />
+    <Compile Include="Internal\Animation.cs" />
+    <Compile Include="Internal\ControlExtensions.cs" />
+    <Compile Include="Internal\Draw.cs" />
+    <Compile Include="Internal\DwmColorizationParams.cs" />
+    <Compile Include="Internal\Geometry.cs" />
+    <Compile Include="Components\MContextMenu.cs" />
+    <Compile Include="MForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm.Designer.cs">
+      <DependentUpon>MForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Scaling\DIP.cs" />
+    <Compile Include="Themes\Theme.cs" />
+    <Compile Include="Themes\ThemeColor.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Components\Internal\ContextForm.resx">
+      <DependentUpon>ContextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_theme.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_theme.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

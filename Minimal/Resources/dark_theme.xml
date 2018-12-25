@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <COMPONENT_BACKGROUND>
+    <ThemeColor Normal="#161616" Hover="#000000" Focus="#000000" Disabled="#151515"/>
+  </COMPONENT_BACKGROUND>
+  <COMPONENT_FOREGROUND>
+    <ThemeColor Normal="#FFFFFF" Hover="#000000" Focus="#000000" Disabled="#444444"/>
+  </COMPONENT_FOREGROUND>
+  <COMPONENT_FILL>
+    <ThemeColor Normal="#343438" Hover="#404044" Focus="#000000" Disabled="#252628"/>
+  </COMPONENT_FILL>
+  <COMPONENT_BORDER>
+    <ThemeColor Normal="#4C4C51" Hover="#000000" Focus="#000000" Disabled="#252628"/>
+  </COMPONENT_BORDER>
+  <COMPONENT_HIGHLIGHT>
+    <ThemeColor Normal="#535359" Hover="#727272" Focus="#000000" Disabled="#000000"/>
+  </COMPONENT_HIGHLIGHT>
+  <FORM_BACKGROUND>
+    <ThemeColor Normal="#1F1F1F" Hover="#000000" Focus="#000000" Disabled="#000000"/>
+  </FORM_BACKGROUND>
+  <DARK_BASED>
+    <Bool Value="true"/>
+  </DARK_BASED>
+</root>
