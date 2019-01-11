@@ -8,3 +8,5 @@ Minimal library is a toolkit of the Windows Forms user-interface components. Unl
 
 In order to successfuly setup Minimal library you need to add it to your project references. You can start with the new WinForm project or integrate library to existing one. If you are using Visual Studio 2017, adding library to your references can be done by simply right-clicking on Reference item in your Solution Explorer, choosing Add reference and than Browse. After selecting .dll file downloaded from official website, you should be able to see all newly added controls (M-Controls) in a toolbox window. As a last step, you need to enable library itself. This can be done by simply calling M.EnableMinimall() in Program.cs file right before your Application.Run() method call. 
 
+## Download
+www.minimallibrary.com
